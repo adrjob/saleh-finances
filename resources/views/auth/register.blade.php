@@ -31,7 +31,7 @@
 
             <div class="flex items-center justify-end mt-4">
                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    Bereits registriert?
+                Already registered?
                 </a>
 
                 <x-jet-button class="ml-4">

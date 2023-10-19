@@ -82,7 +82,7 @@
 
                             <!-- Team Switcher -->
                             <div class="block px-4 py-2 text-xs text-gray-400">
-                                Team wechseln
+                                Change team
                             </div>
 
                             @foreach (Auth::user()->allTeams() as $team)
@@ -146,7 +146,7 @@
             <div class="mt-3 space-y-1">
                 <!-- Account Management -->
                 <x-jet-responsive-nav-link href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')">
-                    Profil
+                    Profile
                 </x-jet-responsive-nav-link>
 
                 @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
@@ -176,18 +176,18 @@
 
                     <!-- Team Settings -->
                     <x-jet-responsive-nav-link href="{{ route('teams.show', Auth::user()->currentTeam->id) }}" :active="request()->routeIs('teams.show')">
-                        Team Einstellungen
+                        Team Settings
                     </x-jet-responsive-nav-link>
 
                     <x-jet-responsive-nav-link href="{{ route('teams.create') }}" :active="request()->routeIs('teams.create')">
-                        Neues Team erstellen
+                        Create new team
                     </x-jet-responsive-nav-link>
 
                     <div class="border-t border-gray-200"></div>
 
                     <!-- Team Switcher -->
                     <div class="block px-4 py-2 text-xs text-gray-400">
-                        Team wechseln
+                        Change team
                     </div>
 
                     @foreach (Auth::user()->allTeams() as $team)

@@ -44,13 +44,13 @@ class DisplayGoals extends Component
                 'goal' => 'required|numeric'
             ],
             [
-                'required' => 'Das Feld :attribute muss ausgefüllt sein.',
-                'date' => 'Das Feld :attribute enthält kein gültiges Datum.',
-                'numeric' => 'Das Feld :attribute enthält keine Zahl.'
+                'required' => 'The :attribute field must be filled out.',
+                'date' => 'The :attribute field does not contain a valid date.',
+                'numeric' => 'The :attribute field does not contain a number.'
             ],
             [
-                'startedAt' => 'Startet am',
-                'goal' => 'Ziel'
+                'startedAt' => 'Started am',
+                'goal' => 'Goal'
             ]
         );
 
@@ -67,7 +67,7 @@ class DisplayGoals extends Component
         if ($openGoalCount > 0) {
             $this->addError(
                 'startedAt',
-                'Das Ziel konnte nicht erstellt werden: Es ist bereits ein anderes Ziel offen.'
+                'The destination could not be created: another destination is already open.'
             );
 
             return;
@@ -76,7 +76,7 @@ class DisplayGoals extends Component
         if ($newerGoalCount > 0) {
             $this->addError(
                 'startedAt',
-                'Das Ziel konnte nicht erstellt werden: Es existiert bereits ein Ziel, welches nach diesem gestartet/beendet wurde (Aus Sichtweise des Datums).'
+                'The goal could not be created: A goal already exists that was started/finished after this one (from a date perspective).'
             );
 
             return;

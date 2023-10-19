@@ -4,7 +4,7 @@
     </x-slot>
 
     <x-slot name="description">
-        Dies ist sind alle erfassten Kontostände.
+        These are all recorded account balances.
     </x-slot>
 
     <x-slot name="content">
